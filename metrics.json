@@ -1,0 +1,255 @@
+{
+  "dataset": "smoke_detection_iot.csv",
+  "target_column": "Fire Alarm",
+  "dropped_columns": [
+    "Unnamed: 0",
+    "UTC"
+  ],
+  "feature_columns": [
+    "Temperature[C]",
+    "Humidity[%]",
+    "TVOC[ppb]",
+    "eCO2[ppm]",
+    "Raw H2",
+    "Raw Ethanol",
+    "Pressure[hPa]",
+    "PM1.0",
+    "PM2.5",
+    "NC0.5",
+    "NC1.0",
+    "NC2.5",
+    "CNT"
+  ],
+  "rows": 62630,
+  "train_rows": 50104,
+  "test_rows": 12526,
+  "test_size": 0.2,
+  "random_state": 42,
+  "metrics": {
+    "Logistic Regression": {
+      "Accuracy": 0.9893022513172601,
+      "AUC": 0.9984822729499302,
+      "Precision": 0.9927349949703811,
+      "Recall": 0.9922913640933974,
+      "F1": 0.9925131299586546,
+      "MCC": 0.9737826514668406,
+      "confusion_matrix": [
+        [
+          3510,
+          65
+        ],
+        [
+          69,
+          8882
+        ]
+      ],
+      "classification_report": {
+        "No alarm": {
+          "precision": 0.980720871751886,
+          "recall": 0.9818181818181818,
+          "f1-score": 0.9812692200167739,
+          "support": 3575.0
+        },
+        "Fire alarm": {
+          "precision": 0.9927349949703811,
+          "recall": 0.9922913640933974,
+          "f1-score": 0.9925131299586546,
+          "support": 8951.0
+        },
+        "accuracy": 0.9893022513172601,
+        "macro avg": {
+          "precision": 0.9867279333611336,
+          "recall": 0.9870547729557896,
+          "f1-score": 0.9868911749877143,
+          "support": 12526.0
+        },
+        "weighted avg": {
+          "precision": 0.9893060878566879,
+          "recall": 0.9893022513172601,
+          "f1-score": 0.9893040466086448,
+          "support": 12526.0
+        }
+      }
+    },
+    "Decision Tree": {
+      "Accuracy": 0.9998403321092129,
+      "AUC": 0.9997202797202797,
+      "Precision": 0.9997766111917793,
+      "Recall": 1.0,
+      "F1": 0.9998882931188561,
+      "MCC": 0.9996085711942944,
+      "confusion_matrix": [
+        [
+          3573,
+          2
+        ],
+        [
+          0,
+          8951
+        ]
+      ],
+      "classification_report": {
+        "No alarm": {
+          "precision": 1.0,
+          "recall": 0.9994405594405594,
+          "f1-score": 0.9997202014549524,
+          "support": 3575.0
+        },
+        "Fire alarm": {
+          "precision": 0.9997766111917793,
+          "recall": 1.0,
+          "f1-score": 0.9998882931188561,
+          "support": 8951.0
+        },
+        "accuracy": 0.9998403321092129,
+        "macro avg": {
+          "precision": 0.9998883055958896,
+          "recall": 0.9997202797202798,
+          "f1-score": 0.9998042472869042,
+          "support": 12526.0
+        },
+        "weighted avg": {
+          "precision": 0.9998403677772326,
+          "recall": 0.9998403321092129,
+          "f1-score": 0.9998403186897921,
+          "support": 12526.0
+        }
+      }
+    },
+    "K-Nearest Neighbors": {
+      "Accuracy": 0.9998403321092129,
+      "AUC": 0.9998599836092853,
+      "Precision": 0.9998882806390348,
+      "Recall": 0.9998882806390348,
+      "F1": 0.9998882806390348,
+      "MCC": 0.9996085603593144,
+      "confusion_matrix": [
+        [
+          3574,
+          1
+        ],
+        [
+          1,
+          8950
+        ]
+      ],
+      "classification_report": {
+        "No alarm": {
+          "precision": 0.9997202797202798,
+          "recall": 0.9997202797202798,
+          "f1-score": 0.9997202797202798,
+          "support": 3575.0
+        },
+        "Fire alarm": {
+          "precision": 0.9998882806390348,
+          "recall": 0.9998882806390348,
+          "f1-score": 0.9998882806390348,
+          "support": 8951.0
+        },
+        "accuracy": 0.9998403321092129,
+        "macro avg": {
+          "precision": 0.9998042801796573,
+          "recall": 0.9998042801796573,
+          "f1-score": 0.9998042801796573,
+          "support": 12526.0
+        },
+        "weighted avg": {
+          "precision": 0.9998403321092129,
+          "recall": 0.9998403321092129,
+          "f1-score": 0.9998403321092129,
+          "support": 12526.0
+        }
+      }
+    },
+    "Gaussian Naive Bayes": {
+      "Accuracy": 0.7979402842088456,
+      "AUC": 0.9677827769370613,
+      "Precision": 0.7912885662431942,
+      "Recall": 0.9741928276170261,
+      "F1": 0.8732662360422613,
+      "MCC": 0.4593920990673929,
+      "confusion_matrix": [
+        [
+          1275,
+          2300
+        ],
+        [
+          231,
+          8720
+        ]
+      ],
+      "classification_report": {
+        "No alarm": {
+          "precision": 0.8466135458167331,
+          "recall": 0.35664335664335667,
+          "f1-score": 0.5018697106868727,
+          "support": 3575.0
+        },
+        "Fire alarm": {
+          "precision": 0.7912885662431942,
+          "recall": 0.9741928276170261,
+          "f1-score": 0.8732662360422613,
+          "support": 8951.0
+        },
+        "accuracy": 0.7979402842088456,
+        "macro avg": {
+          "precision": 0.8189510560299637,
+          "recall": 0.6654180921301913,
+          "f1-score": 0.687567973364567,
+          "support": 12526.0
+        },
+        "weighted avg": {
+          "precision": 0.8070786669916695,
+          "recall": 0.7979402842088456,
+          "f1-score": 0.7672673075618595,
+          "support": 12526.0
+        }
+      }
+    },
+    "Support Vector Machine": {
+      "Accuracy": 0.992575443078397,
+      "AUC": 0.9990668073966029,
+      "Precision": 0.9944183969636079,
+      "Recall": 0.995196067478494,
+      "F1": 0.994807080238986,
+      "MCC": 0.9817882701062407,
+      "confusion_matrix": [
+        [
+          3525,
+          50
+        ],
+        [
+          43,
+          8908
+        ]
+      ],
+      "classification_report": {
+        "No alarm": {
+          "precision": 0.9879484304932735,
+          "recall": 0.986013986013986,
+          "f1-score": 0.9869802603947921,
+          "support": 3575.0
+        },
+        "Fire alarm": {
+          "precision": 0.9944183969636079,
+          "recall": 0.995196067478494,
+          "f1-score": 0.994807080238986,
+          "support": 8951.0
+        },
+        "accuracy": 0.992575443078397,
+        "macro avg": {
+          "precision": 0.9911834137284408,
+          "recall": 0.9906050267462401,
+          "f1-score": 0.9908936703168891,
+          "support": 12526.0
+        },
+        "weighted avg": {
+          "precision": 0.9925718274177475,
+          "recall": 0.992575443078397,
+          "f1-score": 0.9925732561177188,
+          "support": 12526.0
+        }
+      }
+    }
+  }
+}
