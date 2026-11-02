@@ -11,7 +11,7 @@ The project uses `smoke_detection_iot.csv`, containing 62,630 sensor readings an
 Dataset source: [Smoke Detection Dataset on Kaggle](https://www.kaggle.com/datasets/deepcontractor/smoke-detection-dataset).
 
 ## c. GitHub Repository Link
-
+https://github.com/ALOKBITSPILANI/smoke-detection-classification.git
 
 ## d. Models used
 
