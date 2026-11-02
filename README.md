@@ -42,7 +42,7 @@ All models use the same stratified 80/20 train-test split (`random_state=42`). S
 
 The app loads the saved models and evaluates a labeled CSV without retraining. It includes a bundled holdout split, CSV upload, multi-model metrics comparison, a confusion matrix, and a classification report.
 
-Live Streamlit app:
+Live Streamlit app: https://smoke-detection-classificationgit-mtwkfwhdtz5pxwbjjecasm.streamlit.app/
 
 ## Run locally
 
